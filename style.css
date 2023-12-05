@@ -1,0 +1,189 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Press Start 2P', cursive;
+    color: limegreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url('images/bg_coupon.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden;
+    overflow-x: hidden;
+}
+
+.login-container {
+    width: 80vh; /* Adjust width as needed */
+    height: 54vh; /* Adjust height as needed */
+    background: url('images/bg.jpeg') no-repeat center center;
+    background-size: contain;
+    padding: 14em;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px; /* Gives the curved corners */
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+#ascii-art {
+    text-align: center;
+
+    font-size: larger; /* Adjust the font size as needed */
+    width: 80vh; /* Set a specific width */
+    height: 20vh; /* Set a specific height */
+    overflow: auto; /* Scrollbar will appear if content overflows */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+}
+
+
+
+#info-banner{
+    width: 90%; /* Adjust width as needed */
+
+}
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    width: 90%; /* Match the width of .input-group */
+    margin: 0.5em 0; /* Space between rows */
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%; /* Adjust width as needed */
+    margin: 0.5em 0.5em;
+    padding-left: 0.5em;
+    border: 1px solid limegreen;
+    flex-basis: 48%; 
+}
+.name-row {
+    display: flex;
+    justify-content: space-between;
+}
+.input-group.half-width {
+    flex-basis: 40%; /* Make the input groups for the name narrower */
+}
+
+.input-group.full-width {
+    flex-basis: 80%; /* Adjust the width of full-width input groups */
+    align-self: center; /* Center the group if the container is wider */
+}
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+    .input-row {
+        flex-direction: column;
+    }
+
+    .input-group {
+        flex-basis: 100%; /* Full width on smaller screens */
+    }
+}
+
+.input-group label {
+    margin: 0.5em 0.5em;
+    white-space: nowrap;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.8em;
+    margin-top: 0.5em;
+}
+
+
+.input-group input {
+    font-family: 'Press Start 2P'; /* Apply the same font to your input */
+    background-color: transparent;
+    color: limegreen;
+    border: none;
+    padding: 0.5em;
+    flex-grow: 1; /* Makes input field fill up the rest of the line */
+}
+
+/* Remove border on focus */
+.input-group input:focus {
+    outline: none; /* Removes the default focus highlight */
+}
+
+.buttons button {
+    background-color: transparent;
+    color: limegreen;
+    border: 1px solid limegreen;
+    padding: 0.5em 1em;
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 1em;
+    border-radius: 5px; /* Slight curve on the buttons */
+}
+
+.buttons button:hover {
+    border: 1px solid #fff;
+    color: #fff;
+}
+/* Style for comments section */
+.comments-section, #commentsContainer {
+    margin-top: 20px;
+    width: 100%;
+}
+
+#commentForm {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#commentForm textarea {
+    width: 80%;
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-family: Arial, sans-serif; /* Using a more standard font for text input */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#commentForm button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: limegreen;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#commentForm button:hover {
+    background-color: darkgreen;
+}
+
+#commentsContainer div {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* Additional styles for the back button */
+.back-button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: darkgray;
+}

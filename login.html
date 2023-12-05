@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamify Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+<body>
+    <div class="login-container">
+        <pre id="ascii-art">
+:'######::::::'###::::'##::::'##:'####:'########:'##:::'##:
+'##... ##::::'## ##::: ###::'###:. ##:: ##.....::. ##:'##::
+ ##:::..::::'##:. ##:: ####'####:: ##:: ##::::::::. ####:::
+ ##::'####:'##:::. ##: ## ### ##:: ##:: ######:::::. ##::::
+ ##::: ##:: #########: ##. #: ##:: ##:: ##...::::::: ##::::
+ ##::: ##:: ##.... ##: ##:.:: ##:: ##:: ##:::::::::: ##::::
+. ######::: ##:::: ##: ##:::: ##:'####: ##:::::::::: ##::::
+:......::::..:::::..::..:::::..::....::..:::::::::::..:::::
+        </pre>
+        <p id="info-banner">The Gamify Entertainment System DOS <br/>
+            <br/>
+            Version 1.00 (C)opyright Gamify Corp 2023
+        </p>
+        
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="user-id">USERID:</label>
+                <input type="text" id="user-id" name="user-id">
+            </div>
+            <div class="input-group">
+                <label for="password">PASSWORD:</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div class="buttons">
+                <button type="button" id="goSignUp">> SIGNUP <</button>
+                <button type="submit">> LOGIN <</button>
+            </div>
+        </form>
+    </div>
+    <script src="database.js"></script>
+    <script src="signup.js"></script>
+    <script src="login.js"></script>
+    <script>
+        document.getElementById('goSignUp').addEventListener('click', function() {
+            window.location.href = 'signup.html'; // Redirects to signup.html
+        });
+    </script>
+</body>
+</html>

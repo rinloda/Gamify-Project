@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - Gamify</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Subscription Payment</h2>
+        <p>Amount: $10.00</p>
+        
+        <!-- Simplified payment form -->
+        <form id="paymentForm">
+            <div class="input-group">
+                <label for="card-info">Card Information:</label>
+                <input type="text" id="card-info" name="card-info" placeholder="Card Number" required>
+            </div>
+            <div class="input-group">
+                <label for="card-expiry">Expiry Date:</label>
+                <input type="text" id="card-expiry" name="card-expiry" placeholder="MM/YY" required>
+            </div>
+            <div class="input-group">
+                <label for="card-cvc">CVC:</label>
+                <input type="text" id="card-cvc" name="card-cvc" placeholder="CVC" required>
+            </div>
+            <div class="buttons">
+                <button onclick="location.href='profile.html'">> GOBACK <</button>
+                <button type="submit">> PAY <</button>
+            </div>
+        </form>
+    </div>
+    <script src="payment.js"></script>
+
+</body>
+</html>
