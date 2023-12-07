@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamify OTP Verification</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+<body>
+    <div class="login-container">
+        <pre id="ascii-art">
+:'######::::::'###::::'##::::'##:'####:'########:'##:::'##:
+'##... ##::::'## ##::: ###::'###:. ##:: ##.....::. ##:'##::
+ ##:::..::::'##:. ##:: ####'####:: ##:: ##::::::::. ####:::
+ ##::'####:'##:::. ##: ## ### ##:: ##:: ######:::::. ##::::
+ ##::: ##:: #########: ##. #: ##:: ##:: ##...::::::: ##::::
+ ##::: ##:: ##.... ##: ##:.:: ##:: ##:: ##:::::::::: ##::::
+. ######::: ##:::: ##: ##:::: ##:'####: ##:::::::::: ##::::
+:......::::..:::::..::..:::::..::....::..:::::::::::..:::::
+        </pre>
+        <p id="info-banner"> OTP Verification </p>
+        <form id="otpForm">
+            <div class="input-group">
+                <label for="otp">Enter OTP:</label>
+                <input type="text" id="otp" name="otp" required>
+            </div>
+            <div class="buttons">
+                <button type="button" id="goBackButton">> GO BACK <</button>
+                <button type="submit">> VERIFY OTP <</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="otp.js"></script>
+</body>
+</html>
