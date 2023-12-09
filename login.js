@@ -6,7 +6,7 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
     const usernameRegex = /^[a-zA-Z0-9]+$/;
 
     if (!usernameRegex.test(userid)) {
-        alert("Invalid UserID. UserID should be alphanumeric.");
+        alert("Invalid. UserID should be alphanumeric.");
         return;
     }
 
